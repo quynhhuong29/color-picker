@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3c5186;
+  font-family: 'Poppins', sans-serif;
+}
+
+.colors-list {
+  width: 500px;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 3px;
+}
+
+.colors-list .form h1 {
+  text-align: center;
+  color: #3c5186;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.colors-list .form .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.colors-list .form .input-group input {
+  padding: 10px;
+  border: 1px solid #3c5186;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 3px;
+}
+
+.colors-list .form .input-group button {
+  background-color: #3c5186;
+  color: white;
+  padding: 12px 30px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+.colors-list .form ul {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.colors-list .form ul li {
+  -webkit-box-shadow: 0 0 18px 2px rgba(204, 204, 204, 0.5);
+          box-shadow: 0 0 18px 2px rgba(204, 204, 204, 0.5);
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.colors-list .form ul li span {
+  color: white;
+  font-size: 14px;
+  margin: auto;
+}
+
+.colors-list .form ul li .delete {
+  float: right;
+  color: #ffbcbc;
+  padding: 6px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
