@@ -12,6 +12,7 @@ let colors = [
         color: "#C6B4CE"
     }
 ]
+
 var input = document.querySelector(".color-input")
 var ul = document.querySelector("ul")
 //Render colors
@@ -37,13 +38,9 @@ const renderColor = (colors) => {
 function isValidColor(color) {
     var s = new Option().style
     s.color = color
-    if (color.charAt(0) === "#") {
-        color = color.substring(1)
-        return ([3, 4, 6, 8].indexOf(color.length) > -1 && !isNaN(parseInt(color, 16))) || s.color == color
-    } else {
-        return /^(rgb|hsl)a?\((\d+%?(deg|rad|grad|turn)?[,\s]+){2,3}[\s\/]*[\d\.]+%?\)$/i.test(color) || s.color == color
-    }
+    return s.color !== ''
 }
+
 const handleAddColor = () => {
     var inputValue = input.value
     if(!inputValue){
